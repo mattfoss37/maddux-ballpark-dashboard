@@ -96,7 +96,7 @@ const div={
 document.getElementById('grid').innerHTML=Object.entries(div).map(([d,ts])=>`<div class="divcard"><div class="dh">${d}</div>`+
  ts.map(([t,p])=>{const n=V[t];return `<div class="row"><span class="dot ${n?'got':'notyet'}">${n||''}</span><span class="${n?'':'dim'}">${p} <span style="color:#9a9a9a;font-weight:400">· ${t}</span></span></div>`}).join('')+`</div>`).join('');
 
-const order=[[1,"Camden Yards","10, 7"],[2,"Rogers Centre","9, 10"],[3,"Citizens Bank Park","7, 7"],[4,"Petco Park","8"],[5,"PNC Park","7"],[6,"Progressive Field","6"],[7,"Wrigley Field","10"],[8,"Rate Field","8"],[9,"loanDepot park","9"],[10,"Tropicana Field","10"]];
+const order=[[1,"Camden Yards","10"],[2,"Rogers Centre","9"],[3,"Citizens Bank Park","7"],[4,"Petco Park","8"],[5,"PNC Park","7"],[6,"Progressive Field","6"],[7,"Wrigley Field","10"],[8,"Rate Field","8"],[9,"loanDepot park","9"],[10,"Tropicana Field","10"]];
 document.getElementById('order').innerHTML=order.map(([n,p,r])=>`<span class="chip"><span style="color:#6b6b6b">${n}.</span> ${p} <span class="rt">${r}/10</span></span>`).join('');
 
 const G=[
